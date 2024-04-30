@@ -1,0 +1,64 @@
+body{
+    font-family: Helvetica, sans-serif;
+    margin: 0;
+    border: 0;
+}
+
+.main-page{
+    font-family: Helvetica, sans-serif;
+    margin: 0;
+    border: 0;
+}
+
+.head-line{
+    color: white;
+    padding: 1;
+    margin: 0;
+    margin-bottom: 0;
+    background-color: teal;
+    border-style: none solid none solid;
+    border-width: 25px;
+    border-color: rgb(95, 141, 126);
+    text-align: center;
+}   
+
+.info{
+    margin-top: 10;
+    background-image: url(https://img.freepik.com/free-photo/dark-blue-paint-with-shade-background_53876-128599.jpg?t=st=1714473008~exp=1714476608~hmac=bd1b79ebfcba11971f23607510690300bf93c2a51856cb2cc636371ad5211766&w=740);
+    background-size: 100%;
+    color: rgb(228, 228, 228);
+}
+
+.info-c{
+    padding-top: 10;
+    margin: 25;
+    margin-bottom: 50;
+}
+
+.input-area{
+    margin: 0;
+    border-style: none none solid none;
+    border-color: gray;
+    border-width: 10px;
+}
+
+.ia-content{
+    margin: 25;
+    padding: 0;
+}
+
+.inputs{
+    margin: 10 0 10 0;
+}
+
+.loan-value{
+    margin-bottom: 10;
+}
+
+.rebirth{
+    margin-bottom: 10;
+}
+
+.months-loan{
+    margin-bottom: 10;
+}
