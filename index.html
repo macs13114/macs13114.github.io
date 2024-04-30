@@ -8,7 +8,7 @@
 <body>
     <div class="main-page">
         <div class="head-line">
-            <h1>Loan Calculator 0.5</h1>
+            <h1 id="main-name-website">Loan Calculator 0.7</h1>
         </div>
         <div class="info">
             <div class="info-c">
@@ -26,19 +26,23 @@
                     <strong>Please insert all of the data below:</strong>
                     <div class="inputs">
                         <div class="loan-value">
-                            <label for="loan-value">Loan Value:</label>
-                            <input type="number" id="loan-value"></input>
+                            <label for="loan-value">Loan Value (Loan Amount):</label>
+                            <input type="number" id="loan-value" class="input-box"></input>
                         </div>
-                        <div class="rebirth">
-                            <label for="rebirth">Rebirth precentage:</label>
-                            <input type="number" id="rebirth">
+                        <div class="interest">
+                            <label for="interest">Interest precentage:</label>
+                            <input type="number" id="interest" class="input-box">
                         </div>
                         <div class="months-loan">
-                            <label for="months">Amount of Months:</label>
-                            <input type="number", id="months">
+                            <label for="months">Amount of Months (Period of the Loan):</label>
+                            <input type="number", id="months" class="input-box">
                         </div>
                         <div class="calculate-button">
-                            <button>Calculate</button>
+                            <button id="calculate-button" onclick="calculateMonthlyPayout()">Calculate</button>
+                            <span class="end-result">
+                                <label for="end-result">Monthly Payout:</label>
+                            <input type="number" class="input-box" id="end-result" readonly></input>
+                            </span>
                         </div>
                     </div>
                 </div>
@@ -49,4 +53,23 @@
         </div>
     </div>
 </body>
+
+<script>
+    const elLoan = document.getElementById("loan-value");
+    const elMonths = document.getElementById("months");
+    const elInterest = document.getElementById("interest");
+    const calculationBox = document.getElementById("end-result");
+    const inLoan = elLoan.value;
+    const inMonths = elMonths.value;
+    const inIntereset = elInterest.value;
+    var endResult = null;
+
+    function calculateMonthlyPayout() {
+    //endResult = inputLoan + inputMonths + inputInterest;
+    //calculationBox.value = endResult;
+    console.log(inLoan + " : Loan")
+    console.log(inLoan + " : Months")
+    console.log(inLoan + " : Interest")
+}
+</script>
 </html>

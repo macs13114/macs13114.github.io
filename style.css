@@ -1,7 +1,10 @@
-body{
+html, body{
     font-family: Helvetica, sans-serif;
     margin: 0;
     border: 0;
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden;
 }
 
 .main-page{
@@ -23,8 +26,8 @@ body{
 }   
 
 .info{
-    margin-top: 10;
-    background-image: url(https://img.freepik.com/free-photo/dark-blue-paint-with-shade-background_53876-128599.jpg?t=st=1714473008~exp=1714476608~hmac=bd1b79ebfcba11971f23607510690300bf93c2a51856cb2cc636371ad5211766&w=740);
+    margin-top: 0;
+    background-color: rgb(67, 57, 70);
     background-size: 100%;
     color: rgb(228, 228, 228);
 }
@@ -32,6 +35,7 @@ body{
 .info-c{
     padding-top: 10;
     margin: 25;
+    margin-top: 0;
     margin-bottom: 50;
 }
 
@@ -55,10 +59,50 @@ body{
     margin-bottom: 10;
 }
 
-.rebirth{
+.input-box{
+    border: 2px solid rgb(163, 97, 207);
+    border-radius: 6px;
+}
+
+.calculate-button{
+    margin: 20 0 0 0;
+}
+
+#calculate-button{
+    border: 2px solid rgb(163, 97, 207);
+    font-weight: bolder;
+    font-size: 15px;
+    color: purple;
+    padding: 10px 30px;
+    border-radius: 10px;
+}
+
+#calculate-button:hover{
+    background-color: hwb(276 71% 17%);
+}
+
+#calculate-button:active{
+    background-color: hwb(273 60% 30%);
+}
+
+.interest{
     margin-bottom: 10;
 }
 
 .months-loan{
     margin-bottom: 10;
 }
+
+.end-result{
+    margin: 0 0 0 50;
+    padding: 10;
+    border: 2px solid rgb(163, 97, 207);
+    border-radius: 6px;
+    background-color: rgb(218, 204, 218);
+    font-weight: bold;
+    color: rgb(163, 97, 207);
+}
+
+#end-result{
+    padding: 7 10 5 10;
+} 
